@@ -1,4 +1,4 @@
-# Test with i18n and language toggling with client only routes
+# Test with Gatsby, i18n and language toggling with client only routes
 
 This is based on the repo https://github.com/obytes/gatsby-i18n-example.
 
