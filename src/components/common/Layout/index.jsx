@@ -13,18 +13,15 @@ import './layout.css'
 addLocaleData(ar, en)
 
 const Layout = ({ children }) => (
-	<Provider>
-		<Context.Consumer>
-			{({ lang }) => (
-				<IntlProvider locale={lang} messages={lang === 'en' ? localEng : localAr}>
-					<Global lang={lang}>
-						<Header />
-						{children}
-					</Global>
-				</IntlProvider>
-			)}
-		</Context.Consumer>
-	</Provider>
+	<Context.Consumer>
+		{({ lang }) => (
+			<Global lang={lang}>
+				<Header />
+				{children}
+			</Global>
+		)}
+	</Context.Consumer>
+
 )
 
 const Global = styled.div`

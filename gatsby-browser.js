@@ -5,3 +5,9 @@
  */
 
 // You can delete this file if you're not using it
+
+import WrapPageElement from './wrapPageElement';
+import WrapRootElement from './wrapRootElement';
+
+export const wrapPageElement = WrapPageElement;
+export const wrapRootElement = WrapRootElement;

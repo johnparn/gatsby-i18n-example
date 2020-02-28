@@ -1,19 +1,17 @@
-import React from 'react'
-import { FormattedMessage } from 'react-intl'
-import { Layout, Container } from '../components/common'
-import Head from '../components/common/Head'
+import React from 'react';
+import { FormattedMessage } from 'react-intl';
+import { Container } from '../components/common';
+import Head from '../components/common/Head';
 
 const AboutPage = () => (
-	<Layout>
-		<>
-			<Head title="about" />
-			<Container>
-				<h2>
-					<FormattedMessage id="about" />
-				</h2>
-			</Container>
-		</>
-	</Layout>
-)
+  <>
+    <Head title="about" />
+    <Container>
+      <h2>
+        <FormattedMessage id="about" />
+      </h2>
+    </Container>
+  </>
+);
 
-export default AboutPage
+export default AboutPage;
